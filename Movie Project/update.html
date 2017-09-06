@@ -2,13 +2,24 @@
 <html>
 
 <head>
-    <title>Movies.movies</title>
+    <title>Movies.update</title>
 </head>
 
 <body>
 
 
-    <a herf="update.html"><button>Change name of a movie</button></a>
+    <p>
+        Name of movie to change<input id="movieName"> or ID of movie to change<input type="number" id="movieId">
+    </p>
+    <p>
+        New name for the movie <input id="newMovieName">
+    </p>
+    <button name="updateMovie" onclick="ajax(this)">Change movie title</button>
+
+    <div id="ajax"></div>
+
+    <script src="ajax.js"></script>
+
 
 
 

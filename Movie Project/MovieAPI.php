@@ -1,37 +1,44 @@
 <?php
-
+require_once "MovieModel.php";
  $action = $_POST["action"];
+
+ if (isset($_POST['movieName']))
+ {
+   $movieName = $_POST['movieName'];
+ }
+  if (isset($_POST['movieName']))
+ {
+   $newMovieName = $_POST['newMovieName'];
+ }
+  if (isset($_POST['movieName']))
+ {
+   $movieId = $_POST['movieId'];
+ }
+ 
  switch ($action)
  {
      case "selectAll":
       selectAll();
       break;
+
+      case "createMovie":
+      createMovie($movieName);
+      break;
+
+      case "updateMovie":
+      updateMovie($movieId,$newMovieName);
+      break;
+
+      case "deleteMovie":
+      deleteMovie($movieName,$movieId);
+      break;
+
+      case "select":
+      select();
+      break;
+
+
  }
-
-function selectAll()
-{
-    require_once "DAL.php";
-    $allMovies = [];
-    $stmt = $pdo->query("SELECT * FROM movies");
-  
-    foreach ($stmt as $row)
-    {
-        echo  $row['id'] ;
-     
-    }
-    
-}
-
-function createMovie()
-{
-    $statement = $pdo->prepare("INSERT INTO movies( name,id)
-    VALUES( :name, :id)");
-     $statement->execute(array(
-    
-    ":name" => $_SESSION['name'],
-    ":id" => $_SESSION['id']
-    ));
-}
 
 
 ?>

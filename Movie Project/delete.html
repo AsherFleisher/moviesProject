@@ -8,7 +8,15 @@
 <body>
 
 
-    <a herf="delete.html"><button>Delete movie</button></a>
+    <p>
+        Name of movie to change<input id="movieName"> or ID of movie to change<input type="number" id="movieId">
+    </p>
+
+    <button name="deleteMovie" onclick="ajax(this)">Delete movie</button>
+
+    <div id="ajax"></div>
+
+    <script src="ajax.js"></script>
 
 
 </body>
