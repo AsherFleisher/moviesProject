@@ -5,18 +5,20 @@
     <title>Movies.update</title>
 </head>
 
-<body>
-
+<body onload="ajax2()">
 
     <p>
-        Name of movie to change<input id="movieName"> or ID of movie to change<input type="number" id="movieId">
+        Pick a movie to change <select id="movieId"></select>
     </p>
+
     <p>
         New name for the movie <input id="newMovieName">
     </p>
-    <button name="updateMovie" onclick="ajax(this)">Change movie title</button>
+    <button name="updateMovie" onclick="ajax(this)">Change movie title</button> hi
 
     <div id="ajax"></div>
+
+    <a href='index.html'> <button>Back to home page</button></a>
 
     <script src="ajax.js"></script>
 

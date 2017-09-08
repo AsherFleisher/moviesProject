@@ -29,12 +29,8 @@ function ajax(a) {
 }
 
 function ajax2() {
-    if (document.getElementById("movieId")) {
-        var movieId = document.getElementById("movieId").value
-    }
 
     var data = new FormData()
-    data.append("movieId", movieId);
     data.append("action", "select");
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {

@@ -5,16 +5,18 @@
     <title>Movies.movies</title>
 </head>
 
-<body>
+<body onload="ajax2()">
 
 
     <p>
-        Name of movie to change<input id="movieName"> or ID of movie to change<input type="number" id="movieId">
+        Pick a movie to delete <select id="movieId"></select>
     </p>
 
     <button name="deleteMovie" onclick="ajax(this)">Delete movie</button>
 
     <div id="ajax"></div>
+
+    <a href='index.html'> <button>Back to home page</button></a>
 
     <script src="ajax.js"></script>
 
