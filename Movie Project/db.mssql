@@ -1,11 +1,11 @@
 CREATE DATABASE `movies`;
 
-CREATE TABLE `directors` (
+CREATE TABLE movies.directors (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`)
 );
- CREATE TABLE `movies` (
+ CREATE TABLE movies.movies (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) DEFAULT NULL,
   `d_id` int(11) DEFAULT NULL,
