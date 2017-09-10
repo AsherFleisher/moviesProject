@@ -8,7 +8,7 @@
 <body onload="ajax2()">
     
     <?php 
-       require_once "header.php";
+        require_once "header.php";
     ?>
 
 
