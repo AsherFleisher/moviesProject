@@ -6,6 +6,10 @@
 </head>
 
 <body onload="ajax2()">
+    
+    <?php 
+        require_once "header.php";
+    ?>
 
     <p>
         Pick a movie to change <select id="movieId"></select>
@@ -22,10 +26,10 @@
 
     <script src="ajax.js"></script>
 
-
-
+    <?php 
+       require_once "footer.php";
+    ?>
 
 </body>
-
 
 </html>
