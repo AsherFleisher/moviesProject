@@ -8,7 +8,7 @@
 <body>
     
     <?php 
-    require_once "header.php";
+        require_once "header.php";
     ?>
 
     Name of new movie<input id="movieName">
@@ -20,8 +20,8 @@
 
     <script src="ajax.js"></script>
     
-     <?php 
-    require_once "footer.php";
+    <?php 
+        require_once "footer.php";
     ?>
 
 </body>
