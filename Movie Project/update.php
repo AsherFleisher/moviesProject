@@ -13,7 +13,7 @@
     <p>
         New name for the movie <input id="newMovieName">
     </p>
-    <button name="updateMovie" onclick="ajax(this)">Change movie title</button> hi
+    <button name="updateMovie" onclick="ajax(this)">Change movie title</button>
 
     <div id="ajax"></div>
 
