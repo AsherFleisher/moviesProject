@@ -6,6 +6,10 @@
 </head>
 
 <body onload="ajax2()">
+    
+    <?php 
+       require_once "header.php";
+    ?>
 
 
     <p>
@@ -19,9 +23,11 @@
     <a href='index.html'> <button>Back to home page</button></a>
 
     <script src="ajax.js"></script>
-
+    
+    <?php 
+       require_once "footer.php";
+    ?>
 
 </body>
-
 
 </html>
