@@ -9,7 +9,7 @@
 <body>
     
     <?php 
-    require_once "header.php";
+        require_once "header.php";
     ?>
 
     <button name="selectAll" onclick="ajax(this)">View all existing movies</button>
@@ -25,10 +25,9 @@
     <script src="ajax.js"></script>
     
     <?php 
-    require_once "footer.php";
+         require_once "footer.php";
     ?>
 
 </body>
-
 
 </html>
